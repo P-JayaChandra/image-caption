@@ -43,10 +43,14 @@ build/
 
 # Environment variables & secrets (Never commit secrets!)
 .env
-.env.local
-.env.*.local
+.env.*
+!.env.example
+!example.env
+!backend/example.env
 backend/.env
+backend/.env.*
 ai_service/.env
+ai_service/.env.*
 
 # Temporary upload storage
 backend/uploads/*
