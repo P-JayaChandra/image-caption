@@ -41,16 +41,13 @@ htmlcov/
 dist/
 build/
 
-# Environment variables & secrets (Never commit secrets!)
+# Environment variables, env files & secrets (Zero env files permitted)
 .env
-.env.*
-!.env.example
-!example.env
-!backend/example.env
-backend/.env
-backend/.env.*
-ai_service/.env
-ai_service/.env.*
+.env*
+*.env
+*.env*
+backend/.env*
+ai_service/.env*
 
 # Temporary upload storage
 backend/uploads/*
