@@ -1,0 +1,27 @@
+{
+  "name": "visionspeak-ai",
+  "version": "1.0.0",
+  "description": "Offline caption suggestion application; no external AI API key required",
+  "main": "backend/server.js",
+  "scripts": {
+    "setup": "cmd /c npm install && cd backend && cmd /c npm install && cd ../frontend && cmd /c npm install",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && node server.js",
+    "dev:frontend": "cd frontend && cmd /c npm run dev",
+    "start": "cd backend && node server.js"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "ai",
+    "vision",
+    "instagram",
+    "caption-generator",
+    "react",
+    "express"
+  ],
+  "author": "VisionSpeak AI Team",
+  "license": "MIT"
+}
